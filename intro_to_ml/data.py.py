@@ -24,6 +24,7 @@ model = RandomForestRegressor(random_state=1)
 # fit 
 model.fit(train_X, train_y)
 
+# finalyze the project 
 val_predictions = model.predict(val_X)
 model_mae = mean_absolute_error(val_y, val_predictions)
 print(f"mean absolute error is {model_mae}")
